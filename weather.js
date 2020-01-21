@@ -1,4 +1,4 @@
-const url = 'http://api.openweathermap.org/data/2.5/weather?q=London,uk&units=metric&appid=14583dc926375985c30e1b4f2c7f4d23'
+const url = 'https://api.openweathermap.org/data/2.5/weather?q=London,uk&units=metric&appid=14583dc926375985c30e1b4f2c7f4d23'
 
 async function getData() {
    const response = await fetch(url);
