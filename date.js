@@ -6,12 +6,11 @@ function startTime() {
     
     time = clock.toLocaleTimeString([], option1);
     second = clock.toLocaleTimeString([], option2); 
-
-    console.log(time);
-
-    // hours = clock.getHours();
-    // minutes = clock.getMinutes()
-    // second = clock.getSeconds();
+    
+    /* Might be usefull 
+    hours = clock.getHours(); 
+    minutes = clock.getMinutes()
+    second = clock.getSeconds();*/
 
     second = checkTime(second)
     
