@@ -179,6 +179,7 @@ header ul li img {
   width: 14px;
   height: 14px;
   background-image: url(svg/search.svg);
+  background-repeat: no-repeat;
   opacity: 0.6;
 }
 
