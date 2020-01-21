@@ -8,8 +8,6 @@ async function getData() {
    let temp = data.main.temp; 
    temp = Math.round(temp); // No decimal, Integer
 
-   console.log(temp, weather);
-
    document.querySelector('.temp').textContent = temp + '°C';
    document.querySelector('.weather-icon').src = 'svg/' + weather + '.svg';
    document.querySelector('.bg').style.backgroundImage = 'url(img/' + weather + '.jpg)';
