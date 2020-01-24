@@ -40,7 +40,7 @@ function greeting() {
     
     if ( hours < 12){
         document.querySelector('.greeting').textContent = 'Good Morning';
-     } else if (hours < 23 ){
+     } else if (hours < 17 ){
         document.querySelector('.greeting').textContent = 'Good Afternoon';
      }  else {
         document.querySelector('.greeting').textContent = 'Good Evening';

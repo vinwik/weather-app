@@ -8,6 +8,9 @@ async function getData() {
    let temp = data.main.temp; 
    temp = Math.round(temp); // No decimal, Integer
 
+   console.log(weather)
+
+
    document.querySelector('.temp').textContent = temp + '°C';
    document.querySelector('.weather-icon').src = 'svg/' + weather + '.svg';
    document.querySelector('.bg').style.backgroundImage = 'url(img/' + weather + '.jpg)';
@@ -15,7 +18,7 @@ async function getData() {
    const getHours = new Date();
    let hours = getHours.getHours();
 
-   if (weather === 'clear' && hours >= 20 || hours < 6 ){
+   if (weather === 'clear' && (hours >= 20 || hours < 6) ){
       document.querySelector('.bg').style.backgroundImage = 'url(img/' + 'night' + '.jpg)';
    } else if (weather === 'clear' &&  hours < 12 ){
       document.querySelector('.bg').style.backgroundImage = 'url(img/' + 'morning' + '.jpg)';
