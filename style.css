@@ -130,7 +130,7 @@ header ul li img {
 }
 
 .today {
-  text-shadow: 0px 0px 10px #222;
+  text-shadow: 0px 0px 10px #666;
 }
 
 .time {
@@ -173,6 +173,8 @@ header ul li img {
   width: 80%;
   padding-left: 10px;
   padding-right: 10px;
+  -webkit-box-shadow: 0px 0px 10px #666;
+          box-shadow: 0px 0px 10px #666;
 }
 
 .search-bar .search-icon {
