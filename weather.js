@@ -5,11 +5,13 @@ async function getData() {
    const data = await response.json();
 
    let weather = data.weather[0].main.toLowerCase(); // lower case weather description
+   let id = data.weather[0].id;
    let temp = data.main.temp; 
    temp = Math.round(temp); // No decimal, Integer
 
-   console.log(weather)
-
+   if (id >= 700 && id < 800){
+      weather = 'atmosphere';
+   }
 
    document.querySelector('.temp').textContent = temp + '°C';
    document.querySelector('.weather-icon').src = 'svg/' + weather + '.svg';

@@ -3,20 +3,14 @@ const searchEngine = document.querySelector('.search-engine');
 const searchGoogle = document.querySelector('.select-google');
 const searchYoutube = document.querySelector('.search-youtube');
 
-// placeHolder();
 
-// function placeHolder() {
-
-  searchEngine.addEventListener('change', (e) => {
-    if (searchEngine.value === 'youtube') {
-      searchInput.placeholder = 'Search YouTube';
-    }
-      else {searchInput.placeholder = 'Search Google';
-    }
-  });
-
-  
-
+searchEngine.addEventListener('change', (e) => {
+  if (searchEngine.value === 'youtube') {
+    searchInput.placeholder = 'Search YouTube';
+  }
+    else {searchInput.placeholder = 'Search Google';
+  }
+});
 
 function search() {
   if(searchEngine.value === 'google' && searchInput.value.length > 0){
