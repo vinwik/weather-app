@@ -22,7 +22,7 @@ async function getData() {
 
    if (weather === 'clear' && (hours >= 20 || hours < 6) ){
       document.querySelector('.bg').style.backgroundImage = 'url(img/' + 'night' + '.jpg)';
-   } else if (weather === 'clear' &&  hours < 12 ){
+   } else if (weather === 'clear' &&  hours < 11 ){
       document.querySelector('.bg').style.backgroundImage = 'url(img/' + 'morning' + '.jpg)';
    }  else if (weather === 'clear' && hours >= 17){
       document.querySelector('.bg').style.backgroundImage = 'url(img/' + 'evening' + '.jpg)';
